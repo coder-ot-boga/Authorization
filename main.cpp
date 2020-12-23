@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    string registr;
+    string registr = "registr;
     string login;
     string passlog;
     string a;
