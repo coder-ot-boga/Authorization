@@ -1,16 +1,17 @@
-#include "std_lib_facilities.h"
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-    char registr;
-    char login;
-    char passlog;
-    char a;
-    char name, pass, pass1;
-    char test;
-    char test1;
-    cout << "Если ты еще не зарегистрированный пользователь\nнапиши registr\nесли являешься участником то login: ";
+    string registr;
+    string login;
+    string passlog;
+    string a;
+    string name, pass, pass1;
+    string test = "test123";
+    string test1 = "123";
+    cout << "Если ты еще не зарегистрированный пользователь напиши registr \nесли являешься участником то login: \n";
     cin >> a;
     if (a == registr)
     {
@@ -27,7 +28,8 @@ int main()
         else
         {
             cout << "Пароли не совпадают, проверьте правильность написания и повторите еще!";
-            return pass1;
+            return 1;
+
         }
         
     }
@@ -44,10 +46,11 @@ int main()
         else
         {
             cout << "Ошибка при вводе логина или пароля, повторите попытку заново!";
-            return login;
+            return 1;
+        
         }
         
     }
-keep_window_open();
+system("pause");
 return 0; 
 }
